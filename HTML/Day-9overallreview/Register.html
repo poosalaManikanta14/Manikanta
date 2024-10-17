@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mani{
+            background-color: beige;
+             width: 300px;
+             height: 250px;
+             border-radius: 1rem;
+
+        }
+    </style>
+</head>
+<body><br><br>
+    <center>
+        <div id="mani" >
+            <form action="./Login.html">
+                <h1>Register Here</h1>
+        <label>Full Name:-</label>
+        <input name="text" placeholder="" required/><br><br>
+        <label>email:-</label>
+        <input name="email"  placeholder="" required/><br><br>
+        <label>Password:-</label>
+        <input name="password" placeholder="" pattern="(?=.*[A-Z]{1,})(?=.*[a-z]{3,})(?=.*[0-9]{1,})(?=.*[@#$]{1}){8,15}" title="please enter corect password by following instructions like uppercase min[1],lowercasemin[3] numbers min[1] extra symbols(@#$)onlu one" required/><br><br>
+        <button>REGISTER</button>
+        
+            </form>
+    
+        </div>
+    </center>
+    
+</body>
+</html>
