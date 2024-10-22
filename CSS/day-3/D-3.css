@@ -1,0 +1,21 @@
+
+body{ 
+    background-color: azure;
+    /* margin: 30px;  */
+     padding: 20px; 
+
+}
+h2{
+    background-color:rgba(240, 160, 128, 0.568);
+    color: black;
+    text-align: center;
+    text-decoration:underline;
+    font-size:x-large;
+    font-style: italic;
+    padding: 25px;
+    
+}
+div{
+   display: inline-block;
+
+}
