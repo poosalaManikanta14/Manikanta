@@ -1,10 +1,13 @@
 
 body{ 
     background-color: azure;
-    /* margin: 30px;  */
-     padding: 20px; 
+    margin: 5px;
+     padding: 5px; 
 
 }
+ *{
+    margin: 0px;
+ }
 h2{
     background-color:rgba(240, 160, 128, 0.568);
     color: black;
@@ -12,10 +15,45 @@ h2{
     text-decoration:underline;
     font-size:x-large;
     font-style: italic;
-    padding: 25px;
+    padding: 10px;
+    margin: 10px;
+   
     
 }
 div{
    display: inline-block;
+   margin: 15px,15px;
+   height: 250px;
+   width: 300px;
+   box-shadow: 5px 5px lightslategrey , -5px -5px lightslategray,-5px 5px lightslategray,5px -5px lightslategray;
+   /* place-items: center; */
+   padding: 30px;
+   /* justify-content: center; */
+     
+   
+}
 
+/* img{
+    width: 380px;
+    margin: 35px,25px;
+} */
+p{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    color: midnightblue;
+    text-shadow: 1px 1px lightsalmon;
+    font-size: x-large;
+    
+}
+footer{
+    font-style: italic;
+    background-color: wheat;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
 }
