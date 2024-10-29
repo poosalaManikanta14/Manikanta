@@ -1,28 +1,54 @@
-/* div p{
-    background-color: aquamarine;
+  /* div p{
+    background-color: rebeccapurple;
     color: black;
     border: 2px solid red;
     border-radius: 5px;
-    font-size: x-large;
-} */
+    font-size: x-large; 
+}   */
 /* div > p{
     background-color: aquamarine;
     color: black;
     border: 2px solid red;
     border-radius: 5px;
     font-size: x-large;
-} */
-/* div + p{
+}  */
+ /* div + p{
+    background-color:red;
+    color: black;
+    border: 5px solid green;
+    border-radius: 5px;
+    font-size: x-large;
+}  */
+/* div ~ p{ 
     background-color: aquamarine;
     color: black;
     border: 2px solid red;
     border-radius: 5px;
     font-size: x-large;
 } */
-div ~ p{
-    background-color: aquamarine;
-    color: black;
-    border: 2px solid red;
-    border-radius: 5px;
+ h2[id]{
+    background-color: blue;
+    color: white;
     font-size: x-large;
-}
+    text-decoration: overline;
+    border: 3px solid violet;
+    padding: 5px;
+    /* margin: 3px; */
+ }
+ h2[id="as"]{
+    background-color: brown;
+    color: white;
+    text-transform: uppercase;
+    border: 6px solid black;
+ }
+ /* [id~=""]{
+    background-color: yellow;
+    color: black;
+    font-size: 10px;
+ } */
+  div[id^=cass]{
+   background-color: yellowgreen;
+   color: black;
+   font-size: 40px;
+
+  }
