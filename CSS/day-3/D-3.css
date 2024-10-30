@@ -20,6 +20,10 @@ h2{
    
     
 }
+main{
+    padding-left: 60px;
+    padding-right: 90px; 
+}
 div{
    display: inline-block;
    margin: 15px,15px;
@@ -27,9 +31,9 @@ div{
    width: 300px;
    box-shadow: 5px 5px lightslategrey , -5px -5px lightslategray,-5px 5px lightslategray,5px -5px lightslategray;
    /* place-items: center; */
-   padding: 30px;
-   /* justify-content: center; */
-     
+    padding: 30px;
+    /* padding-left: 5px;
+    padding-right: 20px;  */
    
 }
 

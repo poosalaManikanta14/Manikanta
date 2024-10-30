@@ -1,0 +1,63 @@
+body{ 
+    margin: 5px;
+}
+ button{
+    background-color: aqua;
+    color: black; 
+    font-size: 8px;
+    padding: 10px; 
+} 
+ button:hover{
+    background-color: blueviolet;
+    color: antiquewhite;
+} 
+button:active{
+    background-color: burlywood;
+    color: black;
+    font-size: xx-large;
+    width: 100%;
+    height: 100%;
+}
+input:enabled{
+    background-color: beige;
+    color:chocolate; 
+    padding: 6px;
+    border-radius: 10px ;
+    
+}
+input:disabled{
+    background-color: lightcoral;
+    
+    
+}
+input:focus{
+    background-color: lawngreen; 
+    border: 10px solid cadetblue;
+}
+input:checked + span{
+    background-color: chartreuse;
+    padding: 10px;
+    color: white;
+    /* font-weight: 500; */
+} 
+input:in-range{
+    background-color: khaki;
+    color: blue;
+}
+input:invalid{
+    background-color: burlywood;
+    color: brown
+    ;
+}
+p{
+    text-indent: 50px;
+}
+p::first-letter{
+    background-color: blue;
+    color: white;
+    font-size: xx-large;
+}
+p::first-line{
+    background-color: beige;
+    color: black;
+}
