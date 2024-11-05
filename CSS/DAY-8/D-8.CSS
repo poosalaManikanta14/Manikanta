@@ -46,11 +46,10 @@ input:in-range{
 }
 input:invalid{
     background-color: burlywood;
-    color: brown
-    ;
+    color: brown;
 }
 p{
-    text-indent: 50px;
+    text-indent: 60px;
 }
 p::first-letter{
     background-color: blue;
@@ -61,3 +60,25 @@ p::first-line{
     background-color: beige;
     color: black;
 }
+p::selection{
+    background-color: lightblue;
+
+}
+ h3::before{
+    background-color: chocolate;
+    color: white;
+    content: "hello this is mani";
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+} 
+h3::after{
+    background-color: aquamarine;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    content: "Hello this is sagar";
+}
+input::placeholder{
+    background-color: blueviolet;
+    color: black;
+     font-size: 15px;
+} 

@@ -1,0 +1,26 @@
+*{
+    margin: 30px;
+}
+ul{
+    background-color: lightgrey;
+} 
+[data-available="true"]
+{
+    background-color: green;
+}
+
+[data-available="false"]
+{
+    background-color: red;
+}
+
+[data-price="high"]
+{
+    font-weight: bold;
+
+}
+
+[data-category="Electronics"]
+{
+    list-style: "A.";
+}
