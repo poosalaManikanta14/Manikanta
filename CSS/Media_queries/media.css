@@ -1,0 +1,57 @@
+@media screen and (max-width:200px){
+    body{
+        background-color: blue;
+    }
+    p{
+        font-size: 2rem;
+    }
+    img{
+        border-radius: 80vw;
+        width: 90%;
+    }
+} 
+@media screen and (min-width:250px) and (max-width:380px){
+    body{
+        background-color: aquamarine;
+    }
+    p{
+        font-size: 4rem;
+    }
+    img{
+        border-radius:60vw;
+        width: 80%;
+    }
+}
+
+
+/* @media screen and (max-width:300px){
+    body{
+        background-color: blue;
+    }
+}  */
+@media screen and (min-width:400px) and (max-width:780px){
+    body{
+        background-color: brown;
+    }
+    p{
+        font-size: 6rem;
+    }
+    img{
+        border-radius: 40vw;
+        width: 30%;
+
+    }
+}
+@media (min-width:785px) and (max-width:1440px){
+    body{
+        background-color: violet;
+    }
+    p{
+        font-size: 8rem;
+    }
+    img{
+        border-radius:30vw ;
+         width: 60%;
+        
+    }
+}
