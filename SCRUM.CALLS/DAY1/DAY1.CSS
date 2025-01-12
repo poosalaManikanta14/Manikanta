@@ -1,0 +1,109 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#NAVBAR{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: 10px 15px ;
+    position: relative
+
+}
+#LEFTNB{
+    display: flex;
+    gap: 20px;
+
+}
+#RIGHTNB{
+    display: flex;
+    gap: 20px;
+
+}
+#RIGHTNB > #INPUTTAG{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 2px;
+
+}
+#RIGHTNB input{
+    border: none;
+    outline: none;
+}
+#SIDEBAR{
+    border-right: 1px solid gray;
+    width: 18%;
+    padding: 15px;
+    position: fixed;
+    height: 100%;
+    /* overflow: scroll; */
+
+  } 
+ #PLANNING,#DEVELOP{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+#SIDEBAR p{
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#mainbar {
+     margin-left: 10px; 
+    display: flex;
+    gap: 12px;
+  width: 82%;
+  position: relative;
+  left: 17%; 
+} 
+
+ #INSIDEMAINSIDEPC{
+  display: flex;
+  margin-top: 10px;
+
+} 
+
+ #ROADMAP,#BACKLOG,#BOARDS,#REPORTS,#ISSUES,#CODE,#SECURITY,#RELEASES{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  gap: 5px;
+  background-color:lightsteelblue;
+  border-radius: 10px;
+  align-items: center;
+}
+#ROADMAP:hover,#BACKLOG:hover,#BOARDS:hover,#REPORTS:hover,#ISSUES:hover,#CODE:hover,#SECURITY:hover,#RELEASES:hover,#BOARDS:hover {
+  background-color: lightgreen;
+  border-radius: 10px;
+ } 
+#mainbar > div{
+    background-color: lightcyan;
+    width: 300px;
+    padding: 8px;
+    margin-left: 10px;
+}
+.todoo > div, .progresss > div, .toreview > div , .done > div{
+    padding: 6px;
+}  
+
+.card > p{
+    text-align: center;  
+      padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+    background-color: lightgray; 
+     font-size: 15px; 
+  
+
+}
+
+.card > span > i{
+    background-color: wheat;
+}
