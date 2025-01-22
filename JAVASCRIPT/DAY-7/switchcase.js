@@ -22,7 +22,7 @@
 //     case "morning":
 //         console.log("have a Great morning & have a good day");
 //         break;
-//         c9ase "afternoon":
+//         case "afternoon":
 //             console.log("enjoy your great afternoon,with a bright sunny weather");
 //             break;
 //             case "evening":

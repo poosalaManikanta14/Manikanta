@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SINGLE PAGE</title>
+</head>
+<body>
+    <script >
+          let single = JSON.parse(localStorage.getItem("single"))
+          console.log(single)
+          let cardd=document.createElement("div")
+    cardd.innerHTML= 
+     `<img src= ${single.image} alt="all images" width="100%" />
+                    <h4>${single.title}</h4>
+                    <h5> PRICE:--   ${single.price}</h5>
+                    <h5> CATEGORY:--  ${single.category}</h5>
+                    <button>ADDTOCART</button>
+                    <button >BUYNOW</button>`;
+
+    document.body.append(cardd)
+
+    </script>
+</body>
+</html>

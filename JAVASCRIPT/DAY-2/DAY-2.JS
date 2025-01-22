@@ -25,17 +25,23 @@
 
 
 
-var b=[2,3,4,5,6,7,8,9]
-var sumeven=0;
-var sumodd=0;
-for (var i=0 ; i<b.length ; i++){
-    if (b[i]% 2==0){
-        sumeven = sumeven+b[i]
-    }else{
-        sumodd = sumodd+b[i]
-    }
-}
+// var b=[2,3,4,5,6,7,8,9]
+// var sumeven=0;
+// var sumodd=0;
+// for (var i=0 ; i<b.length ; i++){
+//     if (b[i]% 2==0){
+//         sumeven = sumeven+b[i]
+//     }else{
+//         sumodd = sumodd+b[i]
+//     }
+// }
+// console.log(sumeven);
+// console.log(sumodd);
 
+
+// OUTPUT:- 
+// SUMEVEN:- 20
+// SUMODD:-24
 
 
 
