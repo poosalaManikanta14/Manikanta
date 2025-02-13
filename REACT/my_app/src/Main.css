@@ -1,0 +1,13 @@
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 20px;
+    padding-top: 8px;
+    /* background-color:lightyellow; */
+  }
+  .main img{
+    border-radius: 10px
+
+
+  }

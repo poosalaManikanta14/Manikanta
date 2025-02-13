@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cricket Match Recorder</title>
+    <link rel="stylesheet" href="css/scorestyles.css">
+    <script src="js/validateteam.js"></script>
+    
+</head>
+
+<body>
+    <header class="appbar"> Cricket Scorecard </header>
+    <div id="teamselection">
+        <h1> Teams </h1>
+        <form name="load_teams" id="load_teams" action="javascript:startGame()" method="POST" onsubmit="return loadTeams()">
+            <table class="score_bar">
+                <tr>
+                    <th colspan=2> Type the name of the teams individually. Team 1 bats first. </th>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="team1name" style="display: none">Team 1: Team Name</label>
+                        <input type="text" name="team1name" id="team1name" placeholder="Team 1: Team Name" required>
+                    </td>
+                    <td>
+                        <label for="team2name" style="display: none">Team 2: Team Name</label>
+                        <input type="text" name="team2name" id="team2name" placeholder="Team 2: Team Name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="team1abbr" style="display: none">Team 1: Code</label>
+                        <input type="text" name="team1abbr" id="team1abbr" placeholder="Team 1: Team Code" minlength=1 maxlength=4 required>
+                    </td>
+                    <td>
+                        <label for="team2abbr" style="display: none">Team 2: Team Name</label>
+                        <input type="text" name="team2name" id="team2abbr" placeholder="Team 2: Team Code" minlength=1 maxlength=4 required>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan=2> Type the name of the team members individually </th>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="team1player1" style="display: none">Team 1: Player 1</label>
+                        <input type="text" name="team1player1" id="team1player1" placeholder="Team 1: Player 1 Name" required>
+                    </td>
+                    <td>
+                        <label for="team2player1" style="display: none">Team 2: Player 1</label>
+                        <input type="text" name="team2player1" id="team2player1" placeholder="Team 2: Player 1 Name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="team1player2" style="display: none">Team 1: Player 2</label>
+                        <input type="text" name="team1player2" id="team1player2" placeholder="Team 1: Player 2 Name">
+                    </td>
+                    <td>
+                        <label for="team2player2" style="display: none">Team 2: Player 2</label>
+                        <input type="text" name="team2player2" id="team2player2" placeholder="Team 2: Player 2 Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="team1player3" style="display: none">Team 1: Player 3</label>
+                        <input type="text" name="team1player3" id="team1player3" placeholder="Team 1: Player 3 Name">
+                    </td>
+                    <td>
+                        <label for="team2player3" style="display: none">Team 2: Player 3</label>
+                        <input type="text" name="team2player3" id="team2player3" placeholder="Team 2: Player 3 Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="team1player4" style="display: none">Team 1: Player 4</label>
+                        <input type="text" name="team1player4" id="team1player4" placeholder="Team 1: Player 4 Name">
+                    </td>
+                    <td>
+                        <label for="team2player4" style="display: none">Team 2: Player 4</label>
+                        <input type="text" name="team2player4" id="team2player4" placeholder="Team 2: Player 4 Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="team1player5" style="display: none">Team 1: Player 5</label>
+                        <input type="text" name="team1player5" id="team1player5" placeholder="Team 1: Player 5 Name">
+                    </td>
+                    <td>
+                        <label for="team2player5" style="display: none">Team 2: Player 5</label>
+                        <input type="text" name="team2player5" id="team2player5" placeholder="Team 2: Player 5 Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="team1player6" style="display: none">Team 1: Player 6</label>
+                        <input type="text" name="team1player6" id="team1player6" placeholder="Team 1: Player 6 Name">
+                    </td>
+                    <td>
+                        <label for="team2player6" style="display: none">Team 2: Player 6</label>
+                        <input type="text" name="team2player6" id="team2player6" placeholder="Team 2: Player 6 Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="team1player7" style="display: none">Team 1: Player 7</label>
+                        <input type="text" name="team1player7" id="team1player7" placeholder="Team 1: Player 7 Name">
+                    </td>
+                    <td>
+                        <label for="team2player7" style="display: none">Team 2: Player 7</label>
+                        <input type="text" name="team2player7" id="team2player7" placeholder="Team 2: Player 7 Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="team1player8" style="display: none">Team 1: Player 8</label>
+                        <input type="text" name="team1player8" id="team1player8" placeholder="Team 1: Player 8 Name">
+                    </td>
+                    <td>
+                        <label for="team2player8" style="display: none">Team 2: Player 8</label>
+                        <input type="text" name="team2player8" id="team2player8" placeholder="Team 2: Player 8 Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="team1player9" style="display: none">Team 1: Player 9</label>
+                        <input type="text" name="team1player9" id="team1player9" placeholder="Team 1: Player 9 Name">
+                    </td>
+                    <td>
+                        <label for="team2player9" style="display: none">Team 2: Player 9</label>
+                        <input type="text" name="team2player9" id="team2player9" placeholder="Team 2: Player 9 Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="team1player10" style="display: none">Team 1: Player 10</label>
+                        <input type="text" name="team1player10" id="team1player10" placeholder="Team 1: Player 10 Name">
+                    </td>
+                    <td>
+                        <label for="team2player10" style="display: none">Team 2: Player 10</label>
+                        <input type="text" name="team2player10" id="team2player10" placeholder="Team 2: Player 10 Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="team1player11" style="display: none">Team 1: Player 11</label>
+                        <input type="text" name="team1player11" id="team1player11" placeholder="Team 1: Player 11 Name">
+                    </td>
+                    <td>
+                        <label for="team2player11" style="display: none">Team 2: Player 11</label>
+                        <input type="text" name="team2player11" id="team2player11" placeholder="Team 2: Player 11 Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Or directly load your team data JSON file:
+                        <button onclick="loadteamfile(1);">Open</button>
+                    </td>
+                    <td>
+                        Or directly load your team data JSON file:
+                        <button onclick="loadteamfile(2);">Open</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        (Optional) Download team data as JSON
+                        <button onclick="saveteamdetails(1);">Save</button>
+                    </td>
+                    <td>
+                        (Optional) Download team data as JSON
+                        <button onclick="saveteamdetails(2);">Save</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan=2>
+                        <input type="submit" value="Start Game">
+                    </th>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="matchdetails" style="display:none">
+        <h1> Match details </h1>
+        <form name="get_match_details" id="get_match_details" action="javascript:loadInitialGameDetails()" method="POST">
+            <table class="score_bar">
+                <tr>
+                    <th colspan=2> Game Details </th>
+                </tr>
+                <tr>
+                    <td style="width:50vw">
+                        <label for="isgametest">Test match?</label>
+                    </td>
+                    <td style="width:50vw">
+                        <input type="checkbox" name="isgametest" id="isgametest" onchange="javascript:toggleTestDetails()">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:50vw">
+                        <label for="maxwickets">Number of wickets (1 to 10)</label>
+                    </td>
+                    <td style="width:50vw">
+                        <input type="number" name="maxwickets" id="maxwickets" min=1 max=10 required>
+                    </td>
+                </tr>
+            </table>
+            <table class="score_bar" id="test_false">
+                <tr>
+                    <td style="width:50vw">
+                        <label for="maxovers">Number of overs</label>
+                    </td>
+                    <td style="width:50vw">
+                        <input type="number" name="maxovers" id="maxovers" min=1 value=20>
+                    </td>
+                </tr>
+            </table>
+            <table class="score_bar" id="test_true" style="display:none">
+                <tr>
+                    <td style="width:50vw">
+                        <label for="minfollowon">Minimum score required for follow-on</label>
+                    </td>
+                    <td style="width:50vw">
+                        <select name="minfollowon" id="minfollowon">
+                            <option value=200 selected> 200 </option>
+                            <option value=150> 150 </option>
+                            <option value=100> 100 </option>
+                            <option value=75> 75 </option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <table class="score_bar">
+                <tr>
+                    <th colspan=2>
+                        <input type="submit" value="Start Game">
+                    </th>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script>
+        function toggleTestDetails(){
+            if(document.getElementById('isgametest').checked == true) {
+                document.getElementById('test_true').style.display = "table";
+                document.getElementById('test_false').style.display = "none";
+            } else {   
+                document.getElementById('test_true').style.display = "none";
+                document.getElementById('test_false').style.display = "table";
+            }
+        }
+    </script>
+    <script src="./js/card.js"></script>
+    <div id="app_main" style="display: none">
+        <table class="nav_bar">
+            <tr>
+                <td id="goto_game" class="active"><a onclick="javascript:void(0);">Game</a></td>
+                <td id="goto_scorecard"><a onclick="javascript:void(0);">Scorecard</a></td>
+                <td id="goto_commentary"><a onclick="javascript:void(0);">Commentary</a></td>
+            </tr>
+        </table>
+        <div id="section1">
+            <h2> Play </h2>
+            <div id="section1sub1">
+                <table class="score_bar" style="color:#00CCFF">
+                    <tr>
+                        <td>Runs</td>
+                    </tr>
+                </table>
+                <table class="score_bar">
+                    <tr>
+                        <td style="cursor:pointer" onclick="score_runs(0);">0</td>
+                        <td style="cursor:pointer" onclick="score_runs(1);">1</td>
+                        <td style="cursor:pointer" onclick="score_runs(2);">2</td>
+                        <td style="cursor:pointer" onclick="score_runs(3);">3</td>
+                        <td style="cursor:pointer" onclick="score_runs(4);">4</td>
+                        <td style="cursor:pointer" onclick="score_runs(5);">5</td>
+                        <td style="cursor:pointer" onclick="score_runs(6);">6</td>
+                    </tr>
+                </table>
+                <table class="score_bar" style="color:#00CCFF">
+                    <tr>
+                        <td>Extras</td>
+                    </tr>
+                </table>
+                <table class="score_bar">
+                    <tr>
+                        <td style="cursor:pointer" onclick="score_extras('wd');">Wide</td>
+                        <td style="cursor:pointer" onclick="score_extras('nb');">No ball</td>
+                        <td style="cursor:pointer" onclick="score_extras('b');">Byes</td>
+                        <td style="cursor:pointer" onclick="score_extras('lb');">Leg Byes</td>
+                    </tr>
+                </table>
+                <table class="score_bar" style="color:#00CCFF">
+                    <tr>
+                        <td>Wickets</td>
+                    </tr>
+                </table>
+                <table class="score_bar" style="color:red">
+                    <tr>
+                        <td style="cursor:pointer" onclick="dismissal('b');">Bowled</td>
+                        <td style="cursor:pointer" onclick="dismissal('c');">Caught</td>
+                        <td style="cursor:pointer" onclick="dismissal('lbw');">LBW</td>
+                        <td style="cursor:pointer" onclick="dismissal('st');">Stumped</td>
+                        <td style="cursor:pointer" onclick="dismissal('hitwkt');">Hit Wicket</td>
+                        <td style="cursor:pointer" onclick="dismissal('runout');">Run out</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="section2">
+            <!-- SCORE CARDS -->
+            <table class="score_bar">
+                <tr id="selectinningscorecard">
+                </tr>
+            </table>
+            <div id="scorecards">
+            </div>
+        </div>
+        <div id="section3">
+            <!-- COMMENTARY -->
+        </div>
+    </div>
+</body>
+
+</html>
